@@ -1,0 +1,2 @@
+(()=>{const o={openLocationBtn:document.querySelector("[data-contacts-locations-modal-open]"),closeLocationBtn:document.querySelector("[data-contacts-locations-modal-close]"),modal:document.querySelector("[data-contacts-locations-modal]")};function t(){o.modal.classList.toggle("is-hidden")}o.openLocationBtn.addEventListener("click",t),o.closeLocationBtn.addEventListener("click",t)})();
+//# sourceMappingURL=index.7a627283.js.map
