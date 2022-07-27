@@ -1,0 +1,253 @@
+.about {
+  background-color: $background-light;
+}
+
+.about {
+  background-color: $background-light;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0% 74%;
+  background-image: url(/src/images/advantages/png-advantages/milk-mob.png);
+  @include mq(mob) {
+    // background-image: url(/src/images/advantages/png-advantages/milk-mob.png);
+    @include mq(retina) {
+      background-image: url(/src/images/advantages/png-advantages/milk-mob@2x.png);
+    }
+  }
+  @include mq(tab-only) {
+    display: flex;
+  }
+  // @include mq(desk) {
+  //   background-image: none;
+  //   display: none;
+  // }
+  @include mq(tab-only) {
+    background-image: none;
+  }
+  @include mq(desc) {
+    display: flex;
+    background-position: 50% 72%;
+    background-image: url(/src/images/advantages/png-advantages/milk-desk.png);
+
+    @include mq(retina) {
+      background-image: url(/src/images/advantages/png-advantages/milk-desk@2x.png);
+    }
+  }
+}
+
+.about__container {
+  padding-inline: 20px;
+  margin-inline: auto;
+
+  @include mq(tab) {
+    padding-right: 34px;
+    padding-left: 32px;
+  }
+  @include mq(desc) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.about__subtitle {
+  font-family: $fontSecondary;
+  color: $font-subtitle;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+
+  @include mq(tab-only) {
+    font-size: 26px;
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+  @include mq(desc) {
+    font-size: 30px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+    margin-bottom: 16px;
+  }
+}
+
+.about__title {
+  font-family: $fontSecondary;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $font-secondary;
+  margin-bottom: 32px;
+
+  @include mq(tab-only) {
+    font-size: 48px;
+    line-height: 1.15;
+    margin-bottom: 40px;
+  }
+
+  @include mq(desc) {
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+    margin-bottom: 60px;
+  }
+}
+
+.about__category {
+  @include mq(tab-only) {
+    display: flex;
+  }
+  @include mq(desc) {
+    display: flex;
+  }
+}
+//   background-color: $background-light;
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   background-position: 0% 72%;
+//   background-image: url(/src/images/advantages/png-advantages/milk-mob.png);
+//   @include mq(mob) {
+//     // background-image: url(/src/images/advantages/png-advantages/milk-mob.png);
+//     @include mq(retina) {
+//       background-image: url(/src/images/advantages/png-advantages/milk-mob@2x.png);
+//     }
+//   }
+//   @include mq(tab-only) {
+//     display: flex;
+//   }
+//   // @include mq(desk) {
+//   //   background-image: none;
+//   //   display: none;
+//   // }
+//   @include mq(tab-only) {
+//     background-image: none;
+//   }
+//   @include mq(desc) {
+//     display: flex;
+//     background-position: 0% 10%;
+//     background-image: url(/src/images/advantages/png-advantages/milk-desk.png);
+
+//     @include mq(retina) {
+//       background-image: url(/src/images/advantages/png-advantages/milk-desk@2x.png);
+//     }
+//   }
+// }
+
+.about__cow {
+  margin-bottom: 40px;
+  @include mq(tab-only) {
+    margin-bottom: 0px;
+    margin-right: 32px;
+  }
+  @include mq(desc) {
+    margin-right: 99px;
+  }
+}
+
+.about__second {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  padding-right: 60px;
+
+  @include mq(tab-only) {
+    font-size: 14px;
+    line-height: 1.78;
+    padding-right: 0px;
+    // margin-top: 40px;
+  }
+
+  @include mq(desc) {
+    padding-top: 90px;
+  }
+}
+
+.about__description {
+  font-family: $fontPrimary;
+  font-style: normal;
+  color: $font-main-dark;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  margin-bottom: 40px;
+  max-width: 220px;
+  @include mq(tab-only) {
+    font-size: 14px;
+    line-height: 1.79;
+  }
+
+  @include mq(desc) {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.75;
+    margin-bottom: 32px;
+    max-width: 463px;
+
+    letter-spacing: 0.04em;
+  }
+}
+
+.about__text {
+  color: $font-main-light;
+  font-family: $fontPrimary;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  margin-bottom: 20px;
+  max-width: 220px;
+  @include mq(tab-only) {
+    font-size: 14px;
+    line-height: 1.79;
+    margin-bottom: 40px;
+  }
+
+  @include mq(desc) {
+    font-size: 14px;
+    line-height: 1.92;
+    letter-spacing: 0.04em;
+
+    margin-bottom: 40px;
+    max-width: 463px;
+  }
+}
+
+.about__button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 176px;
+  height: 44px;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  color: $btn-primary;
+  padding-left: 37px;
+
+  border: none;
+  border-radius: 22px;
+  background-color: $font-main;
+
+  @include mq(tab-only) {
+    font-size: 16px;
+    line-height: 1.31;
+  }
+  &:hover,
+  &:focus {
+    background-color: $hover;
+  }
+}
+
+.btn-icon-right {
+  padding-top: 2px;
+  padding: 0px;
+  margin-left: 14px;
+}

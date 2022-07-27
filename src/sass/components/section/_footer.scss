@@ -1,0 +1,231 @@
+.mine-footer {
+  position: relative;
+  background-color: $background-light;
+  padding-top: 20px;
+  padding-bottom: 4px;
+  @include mq(desc) {
+    padding-top: 60px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    background: $bg-review-line;
+    width: 100%;
+    height: 1px;
+    bottom: 37px;
+    @include mq(desc) {
+      width: 1167px;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+}
+
+// .mine-footer__wrapper {
+//   @include mq(noDesc) {
+//     border-bottom: 1px solid #e1e1e1;
+//   }
+// }
+
+.alignment {
+  @include mq(mob-only) {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 40px;
+  }
+
+  @include mq(tab) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 40px;
+  }
+
+  @include mq(desc) {
+    padding-bottom: 0;
+    margin-bottom: 60px;
+  }
+}
+
+.mine-footer__text {
+  font-family: $fontSecondary;
+
+  font-size: 18px;
+  line-height: 1.13;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $font-secondary-light;
+
+  @include mq(mob-only) {
+    margin-bottom: 40px;
+  }
+
+  @include mq(tab-only) {
+    width: 340px;
+    font-size: 26px;
+  }
+  @include mq(desc) {
+    font-size: 30px;
+  }
+}
+
+.vibrate-1 {
+  -webkit-animation: vibrate-1 1s linear infinite both;
+  animation: vibrate-1 1s linear infinite both;
+}
+
+@-webkit-keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+@keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+
+.mine-footer__text-color {
+  font-size: 34px;
+  line-height: 1.14;
+  letter-spacing: 0.06em;
+  color: $font-secondary;
+
+  margin-top: 16px;
+
+  @include mq(tab-only) {
+    font-size: 48px;
+  }
+  @include mq(desc) {
+    font-size: 58px;
+  }
+}
+
+.mine-footer__wrapper-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.social-networks {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+}
+
+.social-networks__network {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 30px;
+  background-color: #fea5bb;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.social-networks__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #d41443;
+  }
+}
+
+.social-networks__icon {
+  fill: $white;
+}
+
+.address__link {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.02em;
+  color: $font-secondary;
+}
+
+.address_text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.88;
+  letter-spacing: 0.02em;
+  color: $font-main-dark;
+
+  @include mq(tab-only) {
+    font-size: 14px;
+  }
+  @include mq(desc) {
+    font-size: 16px;
+  }
+}
+
+.mine-footer__year {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.88;
+  letter-spacing: 0.02em;
+  color: $font-main-light;
+}

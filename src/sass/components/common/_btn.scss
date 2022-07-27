@@ -1,0 +1,53 @@
+.btn {
+  padding: 11px 22px;
+  border-radius: 20px;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  @extend %animation;
+  transition-property: background;
+  &-primary {
+    background: $btn-primary;
+    color: $font-main;
+    &:hover,
+    &:focus {
+      background: $background-mobile;
+    }
+  }
+  &-secondary {
+    background: $font-main;
+    color: $font-secondary;
+    &:hover,
+    &:focus {
+      background: $hover;
+    }
+  }
+}
+#myBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  padding: 0;
+  right: 10%;
+  z-index: 0;
+  border: none;
+  outline: none;
+  background-color: $font-subtitle;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  z-index: 99;
+  @extend %animation;
+  transition-property: background-color;
+  &:hover,
+  &:focus {
+    background-color: $background-color;
+  }
+}
+.my-btn {
+  transform: rotate(-90deg);
+  fill: $font-main;
+}

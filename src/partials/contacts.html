@@ -1,0 +1,212 @@
+<section id="contacts" class="section contacts">
+  <div class="container">
+    <h2 class="contacts-header visually-hidden">Contacts</h2>
+    <ul class="contacts-list">
+      <li data-aos="fade-right" class="contacts-item">
+        <span class="contacts-label">Cafe</span>
+        <h3 class="contacts-title">Chicago</h3>
+        <p class="contacts-text">
+          Fusce ut velit laoreet, tempus arcu molestie vulputate
+        </p>
+        <ul class="contacts-schedule list">
+          <li>
+            <p class="schedule-days">Monday - Friday</p>
+            <p class="schedule-times">06:00 AM - 10:00 PM</p>
+          </li>
+          <li>
+            <p class="schedule-days">Saturday - Sunday</p>
+            <p class="schedule-times">08:00 AM - 16:00 PM</p>
+          </li>
+        </ul>
+        <ul class="list">
+          <li>
+            <a href="tel:+61(0)383766284" class="contacts-link link"
+              >+61(0) 383 766 284</a
+            >
+          </li>
+          <li>
+            <a href="mailto:noreply@envato.com" class="contacts-link link"
+              >noreply@envato.com</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li data-aos="fade-up" class="contacts-item">
+        <span class="contacts-label">Food truck</span>
+        <h3 class="contacts-title">Los Angeles</h3>
+        <p class="contacts-text">
+          Fusce ut velit laoreet, tempus arcu molestie vulputate
+        </p>
+        <ul class="contacts-schedule list">
+          <li>
+            <p class="schedule-days">Monday - Friday</p>
+            <p class="schedule-times">06:00 AM - 10:00 PM</p>
+          </li>
+          <li>
+            <p class="schedule-days">Saturday - Sunday</p>
+            <p class="schedule-times">08:00 AM - 16:00 PM</p>
+          </li>
+        </ul>
+        <ul class="list">
+          <li>
+            <a href="tel:+61(0)383766284" class="contacts-link link"
+              >+61(0) 383 766 284</a
+            >
+          </li>
+          <li>
+            <a href="mailto:noreply@envato.com" class="contacts-link link"
+              >noreply@envato.com</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li data-aos="fade-left" class="contacts-item">
+        <span class="contacts-label">Cafe</span>
+        <h3 class="contacts-title">New York</h3>
+        <p class="contacts-text">
+          Fusce ut velit laoreet, tempus arcu molestie vulputate
+        </p>
+        <ul class="contacts-schedule list">
+          <li>
+            <p class="schedule-days">Monday - Friday</p>
+            <p class="schedule-times">06:00 AM - 10:00 PM</p>
+          </li>
+          <li>
+            <p class="schedule-days">Saturday - Sunday</p>
+            <p class="schedule-times">08:00 AM - 16:00 PM</p>
+          </li>
+        </ul>
+        <ul class="list">
+          <li>
+            <a href="tel:+61(0)383766284" class="contacts-link link"
+              >+61(0) 383 766 284</a
+            >
+          </li>
+          <li>
+            <a href="mailto:noreply@envato.com" class="contacts-link link"
+              >noreply@envato.com</a
+            >
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="btn-list list">
+      <li>
+        <button
+          type="button"
+          class="btn btn-primary contacts-btn"
+          data-contacts-locations-modal-open
+        >
+          Our Locations
+          <svg class="contacts-icon" width="5" height="8">
+            <use href="./images/contacts-icons.svg#contacts-icon"></use>
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button
+          type="button"
+          class="btn btn-secondary contacts-btn"
+          data-contacts-franchise-modal-open
+        >
+          Franchise
+          <svg class="contacts-icon" width="5" height="8">
+            <use href="./images/contacts-icons.svg#contacts-icon"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!--_________________ Modal-locations_______________ -->
+
+<div
+  class="contacts-locations-backdrop is-hidden"
+  data-contacts-locations-modal
+>
+  <div class="contacts-locations-modal">
+    <button
+      class="contacts-locations-modal-btn"
+      type="button"
+      data-contacts-locations-modal-close
+    >
+      <svg class="contacts-locations-modal-icon" width="18" height="18">
+        <use href="./images/contacts-icons.svg#contacts-icon-close"></use>
+      </svg>
+    </button>
+    <iframe
+      class="contacts-locations-iframe"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d478940.75962413935!2d-87.76392975675462!3d41.74903025518657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2z0KfQuNC60LDQs9C-LCDQmNC70LvQuNC90L7QudGBLCDQodCo0JA!5e0!3m2!1sru!2sua!4v1656925648713!5m2!1sru!2sua"
+      width="240"
+      height="500"
+    ></iframe>
+  </div>
+</div>
+
+<!--_________________ Modal-Franchisa_______________ -->
+
+<div
+  class="contacts-franchise-backdrop is-hidden"
+  data-contacts-franchise-modal
+>
+  <div class="contacts-franchise-modal">
+    <button
+      class="contacts-franchise-modal-btn"
+      type="button"
+      data-contacts-franchise-modal-close
+    >
+      <svg class="contacts-franchise-modal-icon" width="18" height="18">
+        <use href="./images/contacts-icons.svg#contacts-icon-close"></use>
+      </svg>
+    </button>
+    <p class="franchise-title">Leave your detalies, we will call you back</p>
+    <form class="franchise-form" name="modal-form" autocomplete="on" novalidate>
+      <div class="franchise-form-field">
+        <label class="franchise-form-label" for="username">Name</label>
+        <input
+          class="franchise-form-input"
+          type="text"
+          name="username"
+          required
+          id="username"
+        />
+      </div>
+
+      <div class="franchise-form-field">
+        <label class="franchise-form-label" for="phone-number">Phone</label>
+        <input
+          class="franchise-form-input"
+          type="tel"
+          name="phone-number"
+          required
+          id="phone-number"
+        />
+      </div>
+
+      <div class="franchise-form-field">
+        <label class="franchise-form-label" for="email">E-mail</label>
+        <input
+          class="franchise-form-input"
+          type="email"
+          name="email"
+          id="email"
+        />
+      </div>
+
+      <div class="franchise-form-comment">
+        <label class="franchise-form-label" for="comment">Comment</label>
+        <textarea
+          class="franchise-form-textarea"
+          name="comment"
+          placeholder="Enter text"
+          id="comment"
+        ></textarea>
+      </div>
+
+      <button class="franchise-form-button btn btn-primary" type="submit">
+        Send
+      </button>
+    </form>
+  </div>
+</div>

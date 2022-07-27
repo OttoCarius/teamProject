@@ -1,0 +1,129 @@
+.swiper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  picture {
+    margin-bottom: 16px;
+  }
+  svg {
+    margin-bottom: 16px;
+  }
+  span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+    text-align: center;
+    margin-bottom: 32px;
+    color: $font-main-dark;
+    @include mq(tab-only) {
+      font-size: 16px;
+    }
+    @include mq(desc) {
+      font-size: 20px;
+    }
+  }
+}
+.swiper-slide__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reviews-comment__wrapper {
+  // padding-top: 32px;
+  // padding-bottom: 32px;
+  background-color: $bg-review;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+  @include mq(mob-only) {
+    width: 270px;
+    padding: 30px 50px 17px 50px;
+  }
+  @include mq(tab-only) {
+    width: 620px;
+    padding: 30px 6px 36px 6px;
+  }
+  @include mq(desc) {
+    width: 968px;
+    padding: 32px 70px;
+  }
+}
+.reviews-comment {
+  position: relative;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.58;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $font-main-dark;
+  z-index: 1;
+  @include mq(mob-only) {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-image: repeating-linear-gradient(
+      to bottom,
+      $bg-review,
+      $bg-review 29px,
+      $bg-review-line 10px,
+      $bg-review-line 30px
+    );
+  }
+  @include mq(tab-only) {
+    font-size: 14px;
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 2.14;
+    background-image: repeating-linear-gradient(
+      to bottom,
+      $bg-review,
+      $bg-review 28px,
+      $bg-review-line 0px,
+      $bg-review-line 29px
+    );
+  }
+  @include mq(desc) {
+    font-size: 16px;
+    padding-left: 37px;
+    padding-right: 37px;
+    line-height: 1.875;
+    background-image: repeating-linear-gradient(
+      to bottom,
+      $bg-review,
+      $bg-review 29px,
+      $bg-review-line 0px,
+      $bg-review-line 30px
+    );
+  }
+}
+.swiper-slide__icon {
+  position: absolute;
+  top: -12px;
+  left: 0;
+  z-index: -1;
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.swiper-pagination-bullet {
+  background: $bg-pagination;
+  width: 12px;
+  height: 12px;
+}
+.swiper-pagination-bullet-active {
+  background: none;
+  background-image: url(/src/images/reviews/home_pg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}

@@ -1,0 +1,222 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 10000;
+  overflow-y: scroll;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  &.modal {
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+}
+
+.modal {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: rgb(255, 212, 219);
+  position: absolute;
+  top: 10px;
+  padding: 20px;
+  max-height: 100%;
+  overflow: auto;
+  border-radius: 4px;
+
+  @media screen and (min-width: 320px) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    max-width: 395px;
+    width: 100%;
+    background-color: rgb(255, 212, 219);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0% 50%;
+    background-image: url(/src/images/advantages/png-advantages/milk-mob.png);
+    @include mq(retina) {
+      background-image: url(/src/images/advantages/png-advantages/milk-mob@2x.png);
+    }
+  }
+
+  @include mq(tab) {
+    position: absolute;
+    width: calc(100% - 30px);
+    max-width: 680px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    padding: 20px 20px;
+
+    background-color: rgb(255, 212, 219);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    transition-property: opacity, visibility, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    //   background-position: 0% 10%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0% 85%;
+    background-image: url(/src/images/advantages/png-advantages/milk-desk.png);
+    @include mq(retina) {
+      background-image: url(/src/images/advantages/png-advantages/milk-desk@2x.png);
+    }
+  }
+  @include mq(desc) {
+    max-width: 760px;
+    height: 500px;
+    padding: 30px 30px;
+  }
+}
+
+.modal__title {
+  font-family: $fontSecondary;
+  color: $font-secondary;
+  text-align: center;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.14;
+  margin-bottom: 10px;
+
+  @include mq(tab-only) {
+    font-size: 30px;
+    line-height: 1.14;
+    margin-bottom: 15px;
+  }
+
+  @include mq(desc) {
+    font-family: $fontSecondary;
+
+    font-size: 34px;
+    line-height: 1.14;
+
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $font-secondary;
+    margin-bottom: 20px;
+  }
+}
+
+.modal__btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    border-color: palevioletred;
+  }
+}
+
+.modal__icon {
+  fill: $font-secondary;
+}
+
+.modal__text--first {
+  color: $font-main-dark;
+  font-family: $fontPrimary;
+  text-align: center;
+  letter-spacing: 0.04em;
+  margin-bottom: 10px;
+  font-size: 13px;
+  line-height: 1.4;
+
+  @include mq(tab-only) {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  @include mq(desc) {
+    font-size: 16px;
+    line-height: 1.5;
+
+    margin-bottom: 10px;
+  }
+}
+
+.modal__text--second {
+  color: $font-main-dark;
+  font-family: $fontPrimary;
+  text-align: center;
+  letter-spacing: 0.04em;
+  margin-bottom: 10px;
+  font-size: 13px;
+  line-height: 1.4;
+
+  @include mq(tab-only) {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  @include mq(desc) {
+    font-size: 16px;
+    line-height: 1.5;
+
+    margin-bottom: 10px;
+  }
+}
+
+.modal__text--three {
+  color: $font-main-dark;
+  font-family: $fontPrimary;
+  text-align: center;
+  letter-spacing: 0.04em;
+  margin-bottom: 10px;
+  font-size: 13px;
+  line-height: 1.4;
+
+  @include mq(tab-only) {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  @include mq(desc) {
+    font-size: 16px;
+    line-height: 1.5;
+
+    margin-bottom: 10px;
+  }
+}
+
+.modal__text--four {
+  color: $font-main-dark;
+  font-family: $fontPrimary;
+  text-align: center;
+  letter-spacing: 0.04em;
+  font-size: 13px;
+  line-height: 1.4;
+
+  @include mq(tab-only) {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  @include mq(desc) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}

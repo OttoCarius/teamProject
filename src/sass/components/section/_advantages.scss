@@ -1,0 +1,142 @@
+.advantages {
+  padding-top: 46px;
+
+  background-color: $background-light;
+
+  @include mq(tab) {
+    padding-top: 146px;
+  }
+  @include mq(desc) {
+    padding-top: 90px;
+  }
+}
+
+.advantages__container {
+  padding-inline: 20px;
+  margin-inline: auto;
+
+  @include mq(tab) {
+    padding-inline: 32px;
+  }
+  @include mq(desc) {
+    padding-inline: 16px;
+  }
+}
+.advantages__title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.advantages__list {
+  list-style: none;
+  @include mq(tab) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.advantages__item {
+  position: relative;
+  &:not(:last-child) {
+    margin-bottom: 98px;
+    @include mq(tab) {
+      margin-bottom: 0px;
+    }
+  }
+  &:first-child:before {
+    content: '';
+    background-image: url(/src/images/advantages/png-advantages/bucket.png);
+    height: 50px;
+    width: 33px;
+    position: absolute;
+    bottom: calc(100% + 16px);
+    @include mq(tab) {
+      bottom: calc(100% + 36px);
+    }
+    @include mq(desc) {
+      bottom: calc(100% + 40px);
+    }
+  }
+  &:nth-child(n + 2):before {
+    content: '';
+    background-image: url(/src/images/advantages/png-advantages/apples-icon.png);
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: calc(100% + 16px);
+    @include mq(tab) {
+      bottom: calc(100% + 36px);
+    }
+    @include mq(desc) {
+      bottom: calc(100% + 40px);
+    }
+  }
+  &:nth-child(n + 3):before {
+    content: '';
+    background-image: url(/src/images/advantages/png-advantages/ice-cream.png);
+    height: 50px;
+    width: 46px;
+    position: absolute;
+    bottom: calc(100% + 16px);
+    @include mq(tab) {
+      bottom: calc(100% + 36px);
+    }
+    @include mq(desc) {
+      bottom: calc(100% + 40px);
+    }
+  }
+}
+.advantages__number {
+  font-family: $fontSecondary;
+  color: $font-secondary;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  margin-bottom: 25px;
+
+  @include mq(tab) {
+    font-size: 48px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+
+    margin-bottom: 13px;
+  }
+  @include mq(desc) {
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+  }
+}
+.advantages__text {
+  font-family: $fontPrimary;
+  color: $font-main-dark;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.67;
+
+  padding-right: 50px;
+
+  @include mq(tab) {
+    font-size: 14px;
+    line-height: 1.71;
+
+    padding-right: 40px;
+  }
+  @include mq(desc) {
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.02em;
+
+    padding-right: 115px;
+  }
+}

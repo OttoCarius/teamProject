@@ -1,0 +1,169 @@
+<header class="container">
+  <div class="header-top">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <svg class="my-btn" width="20" height="20">
+        <use href="/src/images/svg-sprite/symbol.svg#icon-arrow_btn"></use>
+      </svg>
+    </button>
+    <div class="header-wrapper">
+      <a href="index.html">
+        <img src="/src/images/logo.svg" alt="logo" />
+      </a>
+      <nav class="main-menu">
+        <ul class="nav-list">
+          <li>
+            <a class="nav-list__link current" href="/src/index.html">Home</a>
+          </li>
+          <li><a class="nav-list__link" href="#review">About us</a></li>
+          <li>
+            <a class="nav-list__link" href="#advantages">How it’s made?</a>
+          </li>
+          <li><a class="nav-list__link" href="#products">Our products</a></li>
+          <li><a class="nav-list__link" href="#contacts">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-btn">
+        <!-- buy btn -->
+        <button class="btn btn-secondary btn-buy" data-open-desc-menu>
+          <span class="btn-text"
+            >Buy now<svg width="4" height="8">
+              <use
+                href="/src/images/svg-sprite/symbol.svg#icon-arrow_btn"
+              ></use>
+            </svg>
+          </span>
+        </button>
+        <!-- mobile menu btn -->
+        <button
+          class="menu-btn"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu"
+          data-open-menu
+        >
+          <span class="line line-top"></span>
+          <span class="line line-middle"></span>
+          <span class="line line-bottom"></span>
+        </button>
+        <div class="menu-backdrop is-hidden" data-backdrop>
+          <div class="menu-backdrop__window">
+            <button class="btn-close" data-close-menu>
+              <span class="line-1"></span>
+              <span class="line-2"></span>
+            </button>
+            <div class="menu" id="menu" data-open-menu>
+              <button
+                class="btn btn-secondary btn-buy__mobile"
+                data-open-desc-menu-sec
+              >
+                <span class="btn-text"
+                  >Buy now<svg width="4" height="8">
+                    <use
+                      href="/src/images/svg-sprite/symbol.svg#icon-arrow_btn"
+                    ></use>
+                  </svg>
+                </span>
+              </button>
+              <nav class="menu-mobile">
+                <ul class="menu-nav">
+                  <li>
+                    <a class="menu-text current" href="/src/index.html">Home</a>
+                  </li>
+                  <li><a class="menu-text" href="#review">About us</a></li>
+                  <li>
+                    <a class="menu-text" href="#advantages">How it’s made?</a>
+                  </li>
+                  <li>
+                    <a class="menu-text" href="#products">Our products</a>
+                  </li>
+                  <li><a class="menu-text" href="#contacts">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal window desc -->
+  <div class="modal-desc is-hidden" data-desc-backdrop>
+    <div class="modal-desc__window">
+      <button
+        class="contacts-franchise-modal-btn"
+        type="button"
+        data-close-desc-menu
+      >
+        <svg class="contacts-franchise-modal-icon" width="18" height="18">
+          <use href="./images/contacts-icons.svg#contacts-icon-close"></use>
+        </svg>
+      </button>
+      <form
+        class="franchise-form"
+        name="modal-form"
+        autocomplete="on"
+        novalidate
+      >
+        <h2 class="about__title">How to buy</h2>
+        <div class="franchise-form-field">
+          <label class="franchise-form-label" for="username_id">Name</label>
+          <input
+            class="franchise-form-input"
+            type="text"
+            name="username"
+            required
+            id="username_id"
+          />
+        </div>
+        <div class="franchise-form-field">
+          <label class="franchise-form-label" for="Address_id">Address</label>
+          <input
+            class="franchise-form-input"
+            type="text"
+            name="Address"
+            required
+            id="Address_id"
+          />
+        </div>
+
+        <div class="franchise-form-field">
+          <label class="franchise-form-label" for="phone-number_id"
+            >Phone</label
+          >
+          <input
+            class="franchise-form-input"
+            type="tel"
+            name="phone-number"
+            required
+            id="phone-number_id"
+          />
+        </div>
+
+        <div class="franchise-form-field">
+          <label class="franchise-form-label" for="email_id">E-mail</label>
+          <input
+            class="franchise-form-input"
+            type="email"
+            name="email"
+            id="email_id"
+          />
+        </div>
+
+        <div class="franchise-form-comment">
+          <label class="franchise-form-label" for="comment_id">Comment</label>
+          <textarea
+            class="franchise-form-textarea"
+            name="comment"
+            placeholder="Enter text"
+            id="comment_id"
+          ></textarea>
+        </div>
+
+        <button class="franchise-form-button btn btn-primary" type="submit">
+          Send
+        </button>
+      </form>
+    </div>
+  </div>
+</header>
